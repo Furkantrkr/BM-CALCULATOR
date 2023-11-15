@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-accent-400: hsl(12,88%,59%);
+  --color-accent-300: hsl(13,100%,96%);
+
+  --color-primary-400: hsl(228,39%,23%);
+
+  --color-neutral-100: hsl(232,12%,13%);
+  --color-neutral-100: hsl(0,0%,0%);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+/* General styling */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  background: url(../public/assests/background.jpg);
+  background-position: center;
+  background-size: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 960px;
+}
+
