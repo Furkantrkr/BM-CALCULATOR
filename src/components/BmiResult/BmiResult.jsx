@@ -7,12 +7,14 @@ import extremObesity from '../../../public/assests/5.png';
 import styles from './Result.module.css';
 
 export default function BmiHistory({ bmi }) {
+  // Function to calculate opacity based on BMI range
   const getOpacity = (minBmi, maxBmi, currentBmi) => {
     return currentBmi > minBmi && currentBmi <= maxBmi ? 1.0 : 0.1;
   };
 
   let bodyType;
 
+  // Determine body type based on BMI range
   if (0 < bmi && bmi < 18.5) {
     bodyType = 'Underweight';
   } else if (bmi >= 18.5 && bmi < 25) {
@@ -54,6 +56,7 @@ export default function BmiHistory({ bmi }) {
           style={{ opacity: getOpacity(35, 100, bmi) }}
         />
       </div>
+      {/* Result Container */}
       <div className={styles['result-container']}>
         <p className={styles.result}>Result : {bmi}</p>
         <p className={styles.result}>Body Type : {bodyType ? bodyType : ''}</p>

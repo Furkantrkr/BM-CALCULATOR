@@ -1,0 +1,25 @@
+.table {
+  color: black;
+  width: 100%;
+}
+
+.bmi-table {
+  width: 100%;
+  margin-top: 20px; /* Aralık için biraz boşluk bırakın */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+.row th,
+.row td {
+  flex: 1; 
+  text-align: center;
+  padding: 8px; 
+}

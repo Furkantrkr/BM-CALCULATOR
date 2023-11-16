@@ -1,0 +1,38 @@
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.row td {
+  flex: 1; 
+  text-align: center;
+  padding: 8px; 
+}
+
+
+.datas {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row button {
+  border-radius: 2rem;
+  border: 1.5px solid rgb(235, 82, 82);
+  background: rgb(235, 82, 82);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.row button:hover {
+  background: transparent;
+  border: 1.5px solid rgb(235, 82, 82);
+  color: black;
+}
